@@ -1,0 +1,19 @@
+{
+  "name": "@sun/vite-plugin-mpa",
+  "version": "0.0.1",
+  "description": "vite-plugin-mpa",
+  "keywords": [
+    "vite-plugin-mpa",
+    "vite",
+    "vite-plugin",
+    "mpa",
+    "vite-plugin-multi-page",
+    "vite-plugin-multi-entry"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
