@@ -1,7 +1,9 @@
 {
-  "name": "@sun/vite-plugin-mpa",
+  "name": "@sundaysky/vite-plugin-mpa",
   "version": "0.0.1",
-  "description": "vite-plugin-mpa",
+  "author": "Roc",
+  "license": "MIT",
+  "description": "The vite plugin for multi-page application",
   "keywords": [
     "vite-plugin-mpa",
     "vite",
@@ -10,10 +12,40 @@
     "vite-plugin-multi-page",
     "vite-plugin-multi-entry"
   ],
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "build": "tsup",
+    "dev": "NODE_ENV=development tsup",
+    "prepublishOnly": "pnpm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.18",
+    "tsup": "^8.5.0",
+    "typescript": "^5.8.3"
+  },
+  "peerDependencies": {
+    "vite": "^4.2.0 || ^5.0.0 || ^6.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moonlitusun/vite-plugin-mpa"
+  },
+  "bugs": {
+    "url": "https://github.com/moonlitusun/vite-plugin-mpa/issues"
+  },
+  "homepage": "https://github.com/moonlitusun/vite-plugin-mpa#readme"
 }
