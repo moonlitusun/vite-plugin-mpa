@@ -121,6 +121,50 @@ pages: {
 }
 ```
 
+#### `options[page].title`
+
+- 必填：是
+- 类型：`string`
+- 描述：页面标题。
+
+这个地址会显示在浏览器标签上。
+
+#### `options[page].entry`
+
+- 必填：是
+- 类型：`string`
+- 描述：页面入口文件。
+- 注意：
+
+**要使用相对路径**，例如：
+
+```ts
+entry: 'src/pages/index/main.ts',
+```
+
+#### `options[page].template`
+
+- 必填：否
+- 类型：`string`
+- 描述：页面模版文件。
+- 注意：
+
+**为了复用模版，所以会自动把`options[page].entry`插入到模版中，所以模版内不需要带入口文件和`title`标签**
+
+一个最简单的示例文件为：
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
 ### `options.generateNotFoundHtml`
 
 `仅在开发环境有效`

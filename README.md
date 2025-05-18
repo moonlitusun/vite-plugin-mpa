@@ -121,6 +121,50 @@ pages: {
 }
 ```
 
+#### `options[page].title`
+
+- Required: Yes
+- Type: `string`
+- Description: Page title.
+
+This title will be displayed in the browser tab.
+
+#### `options[page].entry`
+
+- Required: Yes
+- Type: `string`
+- Description: Page entry file.
+- Note:
+
+**Use relative paths**, for example:
+
+```ts
+entry: 'src/pages/index/main.ts',
+```
+
+#### `options[page].template`
+
+- Required: No
+- Type: `string`
+- Description: Page template file.
+- Note:
+
+**To reuse templates, `options[page].entry` will be automatically inserted into the template, so the template doesn't need to include the entry file and `title` tag**
+
+A minimal example file would be:
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
+```
+
 ### `options.generateNotFoundHtml`
 
 `Only effective in development environment`
