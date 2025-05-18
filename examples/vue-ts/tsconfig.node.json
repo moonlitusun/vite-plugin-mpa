@@ -19,7 +19,10 @@
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
-    "noUncheckedSideEffectImports": true
+    "noUncheckedSideEffectImports": true,
+    "paths": {
+      "@sundaysky/vite-plugin-mpa": ["../../dist"]
+    }
   },
   "include": ["vite.config.ts"]
 }
