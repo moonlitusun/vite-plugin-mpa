@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import type { PluginOption } from 'vite';
 import { resolve } from 'node:path';
 import vue from '@vitejs/plugin-vue';
 import vitePluginMPA from '@sundaysky/vite-plugin-mpa';
@@ -25,6 +26,6 @@ export default defineConfig({
           template: 'template/index2.html',
         },
       },
-    }),
+    }) as PluginOption,
   ],
 });
