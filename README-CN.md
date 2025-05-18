@@ -16,7 +16,7 @@ http://localhost:5173/about.html
 
 🙅🏻‍♀️：~~无需再到处找你的MPA页面地址到底是什么。~~
 
-去试试[demo](https://codesandbox.io/p/sandbox/828wq2)。
+去试试[demo](https://codesandbox.io/p/devbox/2lrppj)。
 
 ## 特性
 
