@@ -6,6 +6,7 @@ import type { Pages } from '@/types';
 
 export interface Options {
   pages: Pages;
+  generateNotFoundHtml?: (rawPages: string) => string;
 }
 
 export default function vitePluginMPA(options: Options) {
@@ -20,7 +21,6 @@ export default function vitePluginMPA(options: Options) {
     },
     configResolved(resolvedConfig: ResolvedConfig) {
       config = resolvedConfig;
-      console.log(config, 'config');
     },
     configureServer(server: ViteDevServer) {
       server.middlewares.use(async (req: any, res: any, next: any) => {
@@ -57,12 +57,14 @@ export default function vitePluginMPA(options: Options) {
           res.end(htmlContent);
         } else {
           let list = '';
+          const { generateNotFoundHtml } = options;
+
           for (const page of Object.keys(pages)) {
             const { title } = pages[page];
             list += `<li><a href="/${page}.html">${title}: ${page}</a></li>`;
           }
           res.writeHead(404, { 'Content-Type': 'text/html' });
-          res.end(`<div>
+          res.end(generateNotFoundHtml ? generateNotFoundHtml(list) : `<div>
               <h1>Page not found, you can go to:</h1>
               <ul>${list}</ul>
               </div>`);
