@@ -1,6 +1,6 @@
 {
   "name": "@sundaysky/vite-plugin-mpa",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "author": "Roc",
   "license": "MIT",
   "description": "The vite plugin for multi-page application",

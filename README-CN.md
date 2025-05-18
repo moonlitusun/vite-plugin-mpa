@@ -1,12 +1,12 @@
 # Vite-plugin-mpa
 
-English | [中文](./README-CN.md)
+[English](./README.md) | 中文
 
-## Description
+## 说明
 
-This plugin provides true MPA functionality for Vite, eliminating various limitations of Vite MP.
+本插件为vite提供了真正的MPA功能，抛去了vite MP的种种限制
 
-**No matter where your entry files/template files are located, you can access pages through the root route, making it perfect for embedded page development.**
+**无论你的入口文件/模版文件在哪里，都可以通过根路由访问页面，非常适合嵌入式页面开发。**
 
 ```plaintext
 http://localhost:5173/index.html
@@ -14,37 +14,37 @@ http://localhost:5173/about.html
 ...
 ```
 
-🙅🏻‍♀️: ~~No need to search everywhere for your MPA page addresses.~~
+🙅🏻‍♀️：~~无需再到处找你的MPA页面地址到底是什么。~~
 
-Try the [demo](https://codesandbox.io/p/sandbox/828wq2).
+去试试[demo](https://codesandbox.io/p/sandbox/828wq2)。
 
-## Features
+## 特性
 
-- True **MPA**.
-- Load pages on demand - no matter how many pages you have, only the current page will be loaded.
-- Support for reusing template files.
-- Support for 404 pages.
-- Support for `vue`, `react`...and all frameworks supported by Vite.
+- 真正的**MPA**。
+- 按需加载页面，无论你启动了多少个页面，只会加载当前页面。
+- 支持复用模版文件。
+- 支持404页面。
+- 支持`vue`，`react`...等所有vite支持的框架。
 
-## Quick Start
+## 快速开始
 
-### Installation
+### 安装
 
 ```bash
-# Using pnpm
+# 使用pnpm
 pnpm add @sundaysky/vite-plugin-mpa
 
-# Or bun
+# 或bun
 bun add @sundaysky/vite-plugin-mpa
 
-# Or npm
+# 或npm
 npm install @sundaysky/vite-plugin-mpa
 
-# Or yarn
+# 或yarn
 yarn add @sundaysky/vite-plugin-mpa
 ```
 
-### Configuration
+### 配置
 
 ```ts
 import { defineConfig } from 'vite';
@@ -57,7 +57,7 @@ export default defineConfig({
   plugins: [
     // ...
     vitePluginMPA({
-      // Configure your pages
+      // 配置你的页面
       pages: {
         index: {
           title: 'index',
@@ -75,24 +75,24 @@ export default defineConfig({
 });
 ```
 
-### Usage
+### 使用
 
-Start `vite serve`, visit `http://localhost:5173/index.html`, and you'll see the page.
+启动`vite serve`，访问`http://localhost:5173/index.html`，即可看到页面。
 
-## Configuration Options
+## 配置项
 
 ```ts
 import type { Options } from '@sundaysky/vite-plugin-mpa';
 ```
 
-You can see all configuration option type definitions.
+即可看到所有配置项的类型定义。
 
 ### `options.pages`
 
-- Required: Yes
-- Type: `Record<string, PageInfo>`
-- Description: Page configuration, where key is the page name and value is the page configuration.
-- Type definition:
+- 必填：是
+- 类型：`Record<string, PageInfo>`
+- 描述：页面配置，key为页面名称，value为页面配置。
+- 类型定义：
 
 ```ts
 interface PageInfo {
@@ -104,7 +104,7 @@ interface PageInfo {
 type Pages = Record<string, PageInfo>;
 ```
 
-- Example:
+- 示例：
 
 ```ts
 pages: {
@@ -123,12 +123,12 @@ pages: {
 
 ### `options.generateNotFoundHtml`
 
-`Only effective in development environment`
+`仅在开发环境有效`
 
-- Required: No
-- Type: `(rawPages: string) => string`
-- Description: Generate a 404 page. When a user visits a non-existent page, this function will be called to generate a 404 page.
-- Example:
+- 必填：否
+- 类型：`(rawPages: string) => string`
+- 描述：生成404页面，当用户访问一个不存在的页面时，会调用这个函数生成404页面。
+- 示例：
 
 ```ts
 generateNotFoundHtml: (rawPages: string) => {
