@@ -27,12 +27,14 @@
   "scripts": {
     "build": "tsup",
     "dev": "NODE_ENV=development tsup",
-    "prepublishOnly": "pnpm run build"
+    "prepublishOnly": "pnpm run build",
+    "docs:deploy": "cd docs && PUBLIC_PATH='/vite-plugin-mpa/' pnpm run build && gh-pages -d docs/dist"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.16",
     "@types/lodash-es": "^4.17.12",
     "@types/node": "^22.15.18",
+    "gh-pages": "^6.3.0",
     "tsup": "^8.5.0",
     "typescript": "^5.8.3",
     "vite": "^6.3.5"

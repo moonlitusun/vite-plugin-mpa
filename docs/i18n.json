@@ -1,0 +1,22 @@
+{
+  "gettingStarted": {
+    "zh": "开始",
+    "en": "Getting Started"
+  },
+  "options": {
+    "zh": "配置",
+    "en": "Options"
+  },
+  "introduction": {
+    "zh": "介绍",
+    "en": "Introduction"
+  },
+  "quickStart": {
+    "zh": "快速开始",
+    "en": "Quick Start"
+  },
+  "features": {
+    "zh": "特性",
+    "en": "Features"
+  }
+}
