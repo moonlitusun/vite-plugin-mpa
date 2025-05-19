@@ -28,7 +28,7 @@
     "build": "tsup",
     "dev": "NODE_ENV=development tsup",
     "prepublishOnly": "pnpm run build",
-    "docs:deploy": "cd docs && PUBLIC_PATH='/vite-plugin-mpa/' pnpm run build && gh-pages -d docs/dist"
+    "docs:deploy": "cd docs && PUBLIC_PATH='/vite-plugin-mpa/' pnpm run build && gh-pages -d doc_build"
   },
   "devDependencies": {
     "@types/lodash": "^4.17.16",
