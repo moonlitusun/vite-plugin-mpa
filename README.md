@@ -26,4 +26,4 @@ Try the [demo](https://codesandbox.io/p/devbox/2lrppj).
 
 ## Docs
 
-More docs see [vite-plugin-mpa docs](https://sundaysky.github.io/vite-plugin-mpa/).
+More docs see [vite-plugin-mpa docs](https://moonlit.vip/vite-plugin-mpa).
