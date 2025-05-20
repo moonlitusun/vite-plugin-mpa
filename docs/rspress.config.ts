@@ -24,20 +24,20 @@ export default defineConfig({
       },
     ],
     locales: [
-      // {
-      //   lang: 'zh',
-      //   label: '简体中文',
-      //   editLink: {
-      //     docRepoBaseUrl:
-      //       'https://github.com/moonlitusun/vite-plugin-mpa/tree/main/docs',
-      //     text: '📝 在 GitHub 上编辑此页',
-      //   },
-      //   overview: {
-      //     filterNameText: '过滤',
-      //     filterPlaceholderText: '输入关键词',
-      //     filterNoResultText: '未找到匹配的 API',
-      //   },
-      // },
+      {
+        lang: 'zh',
+        label: '简体中文',
+        editLink: {
+          docRepoBaseUrl:
+            'https://github.com/moonlitusun/vite-plugin-mpa/tree/main/docs',
+          text: '📝 在 GitHub 上编辑此页',
+        },
+        overview: {
+          filterNameText: '过滤',
+          filterPlaceholderText: '输入关键词',
+          filterNoResultText: '未找到匹配的 API',
+        },
+      },
       {
         lang: 'en',
         label: 'English',

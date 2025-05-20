@@ -7,9 +7,13 @@
     "zh": "配置",
     "en": "Options"
   },
-  "introduction": {
+  "Introduction": {
     "zh": "介绍",
     "en": "Introduction"
+  },
+  "guide": {
+    "zh": "指南",
+    "en": "Guide"
   },
   "quickStart": {
     "zh": "快速开始",
