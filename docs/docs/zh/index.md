@@ -13,7 +13,7 @@ hero:
       text: GitHub
       link: https://github.com/moonlitusun/vite-plugin-mpa
   image:
-    src: /rspress-icon.png
+    src: /logo.svg
     alt: Logo
 features:
   - title: 真正的MPA功能

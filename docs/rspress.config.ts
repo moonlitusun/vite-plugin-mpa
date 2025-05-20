@@ -4,12 +4,12 @@ import { defineConfig } from 'rspress/config';
 export default defineConfig({
   root: path.join(__dirname, 'docs'),
   title: 'Vite Plugin MPA',
-  icon: '/rspress-icon.png',
+  icon: '/logo.svg',
   base: process.env.PUBLIC_PATH || '/',
   lang: 'en',
   logo: {
-    light: '/rspress-light-logo.png',
-    dark: '/rspress-dark-logo.png',
+    light: '/logo.svg',
+    dark: '/logo.svg',
   },
   route: {
     cleanUrls: true,
