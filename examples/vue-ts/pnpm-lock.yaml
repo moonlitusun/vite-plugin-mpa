@@ -8,7 +8,7 @@ importers:
 
   .:
     dependencies:
-      '@sundaysky/vite-plugin-mpa':
+      '@sunday-sky/vite-plugin-mpa':
         specifier: ^0.0.1
         version: 0.0.1
       vue:
@@ -303,7 +303,7 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@sundaysky/vite-plugin-mpa@0.0.1':
+  '@sunday-sky/vite-plugin-mpa@0.0.1':
     resolution: {integrity: sha512-HYioIcJTU2whOmH1j3u5H0cnoZF4BKWno8rvAEjOMYXuLQF9hWeTMqmfOp+yGj14rpaEwgBhHe3XIQQwzC2qcw==}
 
   '@types/estree@1.0.7':
@@ -676,7 +676,7 @@ snapshots:
   '@rollup/rollup-win32-x64-msvc@4.41.0':
     optional: true
 
-  '@sundaysky/vite-plugin-mpa@0.0.1': {}
+  '@sunday-sky/vite-plugin-mpa@0.0.1': {}
 
   '@types/estree@1.0.7': {}
 

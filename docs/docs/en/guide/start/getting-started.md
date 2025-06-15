@@ -4,16 +4,16 @@
 
 ```bash
 # Using pnpm
-pnpm add @sundaysky/vite-plugin-mpa
+pnpm add @sunday-sky/vite-plugin-mpa
 
 # Or bun
-bun add @sundaysky/vite-plugin-mpa
+bun add @sunday-sky/vite-plugin-mpa
 
 # Or npm
-npm install @sundaysky/vite-plugin-mpa
+npm install @sunday-sky/vite-plugin-mpa
 
 # Or yarn
-yarn add @sundaysky/vite-plugin-mpa
+yarn add @sunday-sky/vite-plugin-mpa
 ```
 
 ## Configuration
@@ -21,7 +21,7 @@ yarn add @sundaysky/vite-plugin-mpa
 ```ts
 import { defineConfig } from 'vite';
 import type { PluginOption } from 'vite';
-import vitePluginMPA from '@sundaysky/vite-plugin-mpa';
+import vitePluginMPA from '@sunday-sky/vite-plugin-mpa';
 
 // https://vite.dev/config/
 export default defineConfig({

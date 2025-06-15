@@ -4,16 +4,16 @@
 
 ```bash
 # 使用pnpm
-pnpm add @sundaysky/vite-plugin-mpa
+pnpm add @sunday-sky/vite-plugin-mpa
 
 # 或bun
-bun add @sundaysky/vite-plugin-mpa
+bun add @sunday-sky/vite-plugin-mpa
 
 # 或npm
-npm install @sundaysky/vite-plugin-mpa
+npm install @sunday-sky/vite-plugin-mpa
 
 # 或yarn
-yarn add @sundaysky/vite-plugin-mpa
+yarn add @sunday-sky/vite-plugin-mpa
 ```
 
 ## 配置
@@ -21,7 +21,7 @@ yarn add @sundaysky/vite-plugin-mpa
 ```ts
 import { defineConfig } from 'vite';
 import type { PluginOption } from 'vite';
-import vitePluginMPA from '@sundaysky/vite-plugin-mpa';
+import vitePluginMPA from '@sunday-sky/vite-plugin-mpa';
 
 // https://vite.dev/config/
 export default defineConfig({

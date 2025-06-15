@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@sundaysky/vite-plugin-mpa": "^0.0.1",
+    "@sunday-sky/vite-plugin-mpa": "^0.0.1",
     "vue": "^3.5.13"
   },
   "devDependencies": {

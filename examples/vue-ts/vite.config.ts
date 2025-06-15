@@ -2,7 +2,7 @@ import { defineConfig } from 'vite';
 import type { PluginOption } from 'vite';
 import { resolve } from 'node:path';
 import vue from '@vitejs/plugin-vue';
-import vitePluginMPA from '@sundaysky/vite-plugin-mpa';
+import vitePluginMPA from '@sunday-sky/vite-plugin-mpa';
 
 // https://vite.dev/config/
 export default defineConfig({
